@@ -1,0 +1,377 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+
+/* Header */
+header nav li a {
+    font-size: 18px;
+    font-weight: 300;
+    color: #737373;
+}
+
+
+header nav li a:hover {
+    color: #B90160;
+}
+
+
+/* Front Section */
+.face {
+    padding: 189px 0 250px 0;
+    background-image: url(./images/main-bg-img.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+
+.header-front {
+    padding: 124px 0 225px 0;
+}
+
+
+.face h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #000;
+    width: 596px;
+}
+
+
+.face .face--txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 58px;
+}
+
+
+.face .face--txt button {
+    padding: 15px 0;
+    width: 179px;
+    background: linear-gradient(95.2deg, #B90160 2.23%, #2E3192 99.51%);
+    border: none;
+    border-radius: 7px;
+}
+
+
+.face .face--txt button a {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+}
+
+
+/* Explanation Section */
+.sect--title {
+    font-size: 50px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+
+.explain {
+    background-image: url(./images/bg.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    padding: 0 0 161px 0;
+}
+
+
+.explain h1 span {
+    color: #2E3192;
+}
+
+
+/* Card and Cards Styles */
+.cards {
+    display: flex;
+    gap: 61px;
+    padding: 120px 0 0 0;
+}
+
+
+.card {
+    width: 344px;
+    border-radius: 9px;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px 0px #B8005F33;
+}
+
+
+.card--img {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+
+.card--txt {
+    display: flex;
+    flex-direction: column;
+    padding: 23px 33px 23px 22px;
+    gap: 20px;
+}
+
+
+.card--title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    width: 100%;
+}
+
+
+.card--description {
+    font-size: 14px;
+    font-weight: 300;
+    color: #767676;
+    width: 289px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 225px 0 68px 0;
+}
+
+
+footer .flex {
+    align-items: center;
+}
+
+
+footer h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    padding: 0 0 10px 0;
+}
+
+
+footer ul li a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+}
+
+
+footer ul p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    width: 224px;
+    padding: 0 0 10px 0;
+}
+
+
+footer ul h6 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+}
+
+
+/* Responsive */
+
+/* Tablet Version */
+@media (max-width:768px) {
+    .container {
+        width: 90%;
+    }
+
+
+    /* Header */
+    header > .container > .flex {
+        display: none;
+    }
+
+
+    /* Front Section */
+    .face .face--txt h1 {
+        font-size: 40px;
+        width: 320px;
+    }
+
+
+    .face .face--txt button {
+        width: 141px;
+        height: 42px;
+    }
+
+
+    .face .face--txt button a {
+        font-size: 15px;
+        color: #fff;
+    }
+
+
+    /* Explanation Section */
+    .sect--title {
+        font-size: 40px;
+    }
+
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .card {
+        width: 594px;
+        height: fit-content;
+    }
+
+
+    .card--img {
+        height: 189.98px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    .card--description {
+        width: 499.03px;
+    }
+}
+
+
+/* Mobile Version */
+@media (max-width:320px) {
+    /* Header */
+    header > .flex {
+        justify-content: center;
+    }
+
+
+    header img {
+        width: 183.36px;
+
+    }
+
+
+    /* Front Section */
+    .face {
+        padding: 0 0 0 0;
+        background: none;
+    }
+
+
+    .header-front {
+        background: url(./images/bg.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+    }
+
+
+    .face .face--txt h1 {
+        font-size: 25px;
+        width: 194px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 38px 0 0 0;
+    }
+
+
+    .face .face--txt {
+        gap: 42px;
+    }
+
+
+    .face .face--txt button {
+        width: fit-content;
+        height: fit-content;
+        padding: 9px;
+        margin: 0 auto;
+    }
+
+
+    .face .face--txt button a {
+        font-size: 10px;
+    }
+
+
+    /* Explanation Section */
+    .explain > .container > h1 {
+        font-size: 20px;
+        padding: 0;
+    }
+
+
+    .cards {
+        padding: 100px 0 0 0;
+    }
+
+
+    .card {
+        width: 264px;
+        padding: 0 0 21.71px 0;
+    }
+
+
+    .card--title {
+        font-size: 30px;
+    }
+
+
+    .card--description {
+        font-size: 14px;
+        width: 222px;
+    }
+
+
+    /* Footer */
+    footer {
+        padding: 0;
+    }
+
+
+    footer .flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    footer .flex ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    footer ul p {
+        width: 224px;
+        text-align: center;
+    }
+}
