@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+.body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Tasvirning tashqariga chiqishini oldini olish uchun */
+}
+
+.body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/tablet-register-bg.svg);
+    background-size: cover;
+    filter: blur(40px); /* Tasvirni xiralashtirish */
+    z-index: -1; /* Kontent orqasida bo'lishi uchun */
+}
+
+
+/* Form */
+form {
+    width: 1180.27px;
+    height: 392.18px;
+    background-color: #fff;
+    padding: 45px 0;
+    background-image: url(./images/Mask\ Group.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20% 0 0 0;
+    box-shadow: 0px 0px 35px 0px #D4145A40;
+}
+
+
+form h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+
+
+.inputs {
+    display: flex;
+    gap: 24.74px;
+    padding: 45px 0 0 0;
+    width: 749.73px;
+    justify-content: space-between;
+}
+
+
+input {
+    border: 1px solid #A1A1A1;
+    background-color: #fff;
+    border-radius: 9px;
+    padding: 15px;
+    width: 362.49px;
+}
+
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    color: #989898;
+}
+
+
+textarea {
+    width: 749.73px;
+    height: 81.65px;
+    border-radius: 9px;
+    border: 1px solid #A1A1A1;
+}
+
+
+.input-textarea {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+
+
+button {
+    padding: 15px 0;
+    width: 169.49px;
+    background: linear-gradient(96.12deg, #D4145A -21.03%, #3D5BF5 103.56%);
+    border: none;
+    border-radius: 9px;
+}
+
+
+button a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+/* Responsive */
+/* Tablet */
+@media (max-width:768px) {
+    form {
+        width: 635px;
+        height: fit-content;
+        background-color: #fff;
+        padding: 45px 0;
+        background-image: url(./images/Mask\ Group.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 20% 0 0 0;
+        box-shadow: 0px 0px 35px 0px #D4145A40;
+        border-radius: 15px;
+    }
+
+
+    .inputs {
+        flex-direction: column;
+        gap: 21px;
+        width: 432px;
+    }
+
+
+    input {
+        width: 432px;
+    }
+
+
+    textarea {
+        width: 432px;
+        height: 95px;
+    }
+
+
+    button {
+        padding: 10px 0;
+        width: 137px;
+    }
+}
+
+
+/* Mobile Version */
+@media (max-width:320px) {
+    form {
+        width: 267px;
+        padding: 27px 0;
+        margin: 70% 0 0 0;
+    } 
+
+
+    .inputs {
+        gap: 19px;
+        width: 212px;
+    }
+
+
+    input {
+        width: 212px;
+        height: 20px;
+    }
+
+    
+    input::placeholder {
+        text-align: center;
+    }
+
+
+    textarea {
+        width: 212px;
+        height: 95px;
+    }
+}
